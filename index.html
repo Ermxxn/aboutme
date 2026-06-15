@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ermaan Singh | IT Student Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Define Formal Color Palette */
+        :root {
+            --primary-dark: #1a252f;
+            /* Navy */
+            --secondary-dark: #2c3e50;
+            /* Cool Gray/Blue */
+            --light-bg: #f8f9fa;
+            /* Near White */
+            --text-main: #333333;
+            --text-muted: #7f8c8d;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-main);
+            overflow-x: hidden;
+            /* Prevents horizontal scroll during animations */
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        .navbar-brand {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        /* 5. CUSTOM CSS FOR A FORMAL LOOK */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #ffffff 0%, var(--light-bg) 100%);
+            padding: 120px 0;
+        }
+
+        .profile-img-container {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures the image fills the circle without distortion */
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-dark);
+        }
+
+        .skill-badge {
+            background-color: #ffffff;
+            color: var(--secondary-dark);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin: 5px;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s;
+        }
+
+        .skill-badge:hover {
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        .project-card {
+            border: none;
+            border-radius: 10px;
+            transition: all 0.3s;
+            background: #ffffff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-formal {
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            padding: 10px 25px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            text-decoration: none;
+        }
+
+        .btn-formal:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: var(--primary-dark);
+            color: #b0bec5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ERMAAN SINGH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center text-md-start" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-5 mb-md-0" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="profile-img-container">
+                        <img src="profile.jpeg" alt="Ermaan's Profile Picture">
+                    </div>
+                </div>
+                <div class="col-md-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <p class="text-secondary mb-1">Information Technology Student (Cybersecurity and Networking)</p>
+                    <h1 class="display-4 fw-bold">Hi, I'm Ermaan Singh.</h1>
+                    <p class="lead mt-3 text-secondary">A dedicated IT student with a strong foundation in IT,
+                        cybersecurity,
+                        and networking concepts.</p>
+                    <div class="mt-4">
+                        <a href="#projects" class="btn-formal me-2">View Portfolio</a>
+                        <a href="#contact" class="btn btn-outline-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <i class="fas fa-graduation-cap fa-2x mb-3 text-secondary"></i>
+                        <h5>Academic Excellence</h5>
+                        <p class="mb-0 text-muted">4.0 GPA</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <i class="fas fa-language fa-2x mb-3 text-secondary"></i>
+                        <h5>Multilingual</h5>
+                        <p class="mb-0 text-muted">Fluent in 4 Languages including Mandarin</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <i class="fas fa-users fa-2x mb-3 text-secondary"></i>
+                        <h5>Leadership</h5>
+                        <p class="mb-0 text-muted">Student Council Executive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="skills">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Technical Expertise</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">HTML5/CSS3</span>
+                    <span class="skill-badge">Bootstrap</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">VS Code</span>
+                    <span class="skill-badge">Network Analysis</span>
+                    <span class="skill-badge">API Security</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white" id="projects">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card project-card h-100">
+                        <div class="card-body p-4">
+                            <i class="fas fa-laptop-code fa-lg text-secondary mb-3"></i>
+                            <h5 class="card-title">C++ Encryption Suite</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">Core Programming</h6>
+                            <p class="card-text text-secondary sm">Command-line utility implementing various
+                                cryptographic algorithms for secure input handling.</p>
+                            <a href="#" class="btn btn-sm btn-outline-dark mt-2">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card project-card h-100">
+                        <div class="card-body p-4">
+                            <i class="fas fa-globe fa-lg text-secondary mb-3"></i>
+                            <h5 class="card-title">Responsive Web Portal</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">UI/UX & Frontend</h6>
+                            <p class="card-text text-secondary sm">A clean, formal, multi-page frontend website built
+                                using HTML5, CSS3, and Bootstrap.</p>
+                            <a href="#" class="btn btn-sm btn-outline-dark mt-2">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card project-card h-100">
+                        <div class="card-body p-4">
+                            <i class="fas fa-network-wired fa-lg text-secondary mb-3"></i>
+                            <h5 class="card-title">Network API Security Tool</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">Cybersecurity</h6>
+                            <p class="card-text text-secondary sm">Analyzes browser APIs for common vulnerabilities and
+                                implements basic communication logic.</p>
+                            <a href="#" class="btn btn-sm btn-outline-dark mt-2">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="contact">
+        <div class="container text-center">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6">
+                    <p class="lead text-secondary">I am available for opportunities and collaborations.</p>
+                    <a href="mailto:ermaan1970@gmail.com" class="btn-formal mt-3 d-inline-block">Email Me Directly</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <a href="https://github.com/Ermxxn" class="text-white mx-2 fa-lg"><i class="fab fa-github"></i></a>
+            <p class="mt-3 mb-0 text-small"><small>&copy; 2026 Ermaan Singh. All Rights Reserved.</small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 120,    /* How far an element must be visible before animating */
+            duration: 800,  /* Animation duration (ms) */
+            easing: 'ease-in-out', /* Formal animation smoothing */
+            once: true      /* Whether animation should happen only once while scrolling down */
+        });
+    </script>
+</body>
+
+</html>
